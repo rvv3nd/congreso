@@ -1,0 +1,55 @@
+.slide{
+    display: none;
+    padding: 30px;
+    text-align: center;
+}
+
+.dot-container {
+    text-align: center;
+    padding: 50px;
+
+}
+
+  /* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+.exponente-resumen{
+    background-color: #4e604322;
+    transition: .5s ;
+    position: relative;
+    padding: 2rem;
+}
+
+.exponente-resumen:hover{
+    position: relative;
+    width: auto;
+    padding: 2rem;
+    transition: .5s ;
+}
+.exponente-resumen:hover .exponente-resumen-texts{
+    height:min-content;
+    overflow: auto;
+    opacity:1;
+    transition: .3s ;
+    /* hacer que desaparesca cuando no tenga hover*/
+}
+
+.exponente-resumen-texts{
+    height: 0;
+    opacity: 0;
+    transition: opacity 0.3s ;
+
+}
